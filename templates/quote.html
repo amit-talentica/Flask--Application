@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>{{quote.title}}</h1>
+  <small>Written by {{quote.author}} on {{quote.create_date}}</small>
+  <hr>
+  <div>
+    {{quote.body | safe }}
+  </div>
+{% endblock %}
